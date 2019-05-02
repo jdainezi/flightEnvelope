@@ -1,0 +1,53 @@
+######################################################
+#                 ac_name_________                   #
+#Log file with velocities and load factor data.      #
+#This data is in agreement with FAR 23 specifications#
+#Aircraft category: ac_cat______                     #
+######################################################
+Input data:
+output   Output unit system          __output
+W        Maximum takeoff weight       W____ac  W_unit
+c        Mean geometric chord         c____ac  c_unit
+S        Reference area               S____ac  S_unit
+h        Altitude                     h____ac  h_unit
+rho      Air density                  rho__ac  rho_un
+g        Gravity acceleration         g____ac  g_unit
+a        Aircraft cl x alpha slope    a____ac   rad⁻¹
+cl_max_f Maximum cl with flaps      cl_m_f_ac
+cl_max   Maximum cl flaps retracted   cl_m_ac
+cl_min   Minimum cl                 cl_min_ac
+n        Limit positive load factor      n_ac
+######################################################
+Velocity data:
+Vs_pos   Stall speed (positive n)   Vs_pos_ac  vel_un
+Vs_neg   Stall speed (negative n)   Vs_neg_ac  vel_un
+Vsf      Stall speed with flaps        Vsf_ac  vel_un
+Vf       Min speed to activate flaps   Vf__ac  vel_un
+VA_pos   Maneuvre speed (pos n)     VA_pos_ac  vel_un
+VA_neg   Maneuvre speed (neg n)     VA_neg_ac  vel_un
+VC       Cruise speed                  VC__ac  vel_un
+VD       Dive speed                    VD__ac  vel_un
+######################################################
+Gust limit load factor:
+  gust case           load factorVA_pos_commuterVA_neg_commuter
+Vf                      vf_pos_g
+VC positive gust        vc_pos_g
+VC negative gust        vc_neg_g
+VD positive gust        vd_pos_g
+VD negative gust        vd_neg_g
+######################################################
+Maneuvre limit load factor:
+  flight case         load factor
+positive n maneuvre        n_pos
+negative n maneuvre        n_neg
+######################################################
+Resultant load factor:
+  flight case              limit n         ultimate n 
+Vf                        Vf_l_ac            Vf_u_ac
+VA_pos                VA_pos_l_ac        VA_pos_u_ac
+VA_neg                VA_neg_l_ac        VA_neg_u_ac
+VC_pos                VC_pos_l_ac        VC_pos_u_ac
+VC_neg                VC_neg_l_ac        VC_neg_u_ac
+VD_pos                VD_pos_l_ac        VD_pos_u_ac
+VD_neg                VD_neg_l_ac        VD_neg_u_ac
+######################################################
